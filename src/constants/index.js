@@ -219,9 +219,9 @@ const projects = [
     source_code_link: "https://www.theverge.com/2024/9/30/24258763/t-mobile-fcc-settlement-cybersecurity-investment?utm_source=chatgpt.com",
   },
   {
-    name: "Job IT",
+    name: "Samsung Data Breach (2022)",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "In 2022, Samsung suffered a data breach exposing customer information due to security vulnerabilities. The attack highlighted the risks of single-factor authentication, making systems more prone to breaches. This followed an earlier LAPSUS$ hack that leaked internal data, stressing the need for stronger cybersecurity. Samsung responded by enhancing security measures and advising customers to stay cautious.",
     tags: [
       // {
       //   name: "react",
@@ -237,12 +237,12 @@ const projects = [
       // },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "  https://time.com/7209611/data-breaches-increase/?utm_source=chatgpt.com",
   },
   {
-    name: "Trip Guide",
+    name: "Two-Factor Authentication Market Size, Industry Demand ",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Factor Authentication (2FA) market was valued at USD 7.68 billion in 2023 and is expected to grow to USD 31.08 billion by 2032. The market is projected to expand at a CAGR of 16.8% from 2023 to 2032. This growth is driven by increasing cybersecurity concerns and the rising adoption of secure authentication methods.",
     tags: [
       // {
       //   name: "nextjs",
@@ -258,7 +258,7 @@ const projects = [
       // },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://www.marketresearchfuture.com/reports/two-factor-authentication-market-3772",
   },
 ];
 

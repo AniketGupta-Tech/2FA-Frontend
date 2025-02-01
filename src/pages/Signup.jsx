@@ -57,7 +57,7 @@ const Signup = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/user/signup`, {
+      const response = await fetch(`http/localhost:3000/api/user/signup`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -147,15 +147,15 @@ const Signup = () => {
             />
             {error.password && <p className="text-red-500">{error.password}</p>}
           </div>
-          <button
+          <Link to='/verifyEmail'
             type="submit"
             disabled={isSubmitting}
-            className={`w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition ${
+            className={`w-full flex justify-center bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition ${
               isSubmitting ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >
             {isSubmitting ? "Submitting..." : "Sign Up"}
-          </button>
+          </Link>
         </form>
         <p className="text-center text-gray-400 mt-4">
           Already have an account? <Link to="/login" className="text-blue-500">Log in</Link>

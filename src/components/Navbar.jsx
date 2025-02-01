@@ -191,6 +191,7 @@ const Navbar = () => {
           {/* Show Login & Signup when not logged in */}
           {!isAuthenticated ? (
             <>
+            <Link to='/documentation' >Documentation</Link>
               <li
                 className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer"
                 onClick={() => navigate("/login")}

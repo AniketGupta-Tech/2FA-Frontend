@@ -66,15 +66,15 @@ const Login = () => {
             />
             {error.password && <p className="text-red-500">{error.password}</p>}
           </div>
-          <button
+          <Link to='/verifyEmail'
             type="submit"
             disabled={isSubmitting}
-            className={`w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition ${
+            className={`w-full flex justify-center bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition ${
               isSubmitting ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >
             {isSubmitting ? "Logging in..." : "Log In"}
-          </button>
+          </Link>
         </form>
         <p className="text-center text-gray-400 mt-4">
           Don't have an account? <Link to="/signup" className="text-blue-500">Sign up</Link>
